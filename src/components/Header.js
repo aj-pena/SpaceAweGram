@@ -16,7 +16,7 @@ export default function Header() {
             <div className="row ribbon-wrapper">
               {/* <!-- subtitle --> */}
                 <div className="col ribbon">                  
-                  <h3 id="subtitle">Hi ! I am a web developer passionate about mountains, creating and drawing.</h3>
+                  <h3 id="subtitle">Welcome! Type a keyword, search and enjoy 🔭</h3>
                 </div>              
               </div>
         </div>
