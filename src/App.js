@@ -4,6 +4,7 @@ import Header from './components/Header';
 import Footer from './components/Footer';
 import Gallery from './components/pages/Gallery';
 import Favourites from './components/pages/Favourites';
+import Search from './components/Search'
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -12,7 +13,12 @@ export default function App() {
   function renderPage(){
     switch (currentPage){
       case 0:
-        return <Gallery/>;
+        return (
+        <div>  
+        <Search/>  
+        <Gallery/>
+        </div>
+        );
       case 1:
         return <Favourites/>;
     }

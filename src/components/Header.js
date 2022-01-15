@@ -1,5 +1,5 @@
 import React from 'react'
-import Search from './Search'
+
 import Navigation from './Navigation'
 
 export default function Header(props) {
@@ -17,8 +17,7 @@ export default function Header(props) {
             <div className="row ribbon-wrapper">
               {/* <!-- subtitle --> */}
                 <div className="col ribbon">                  
-                  <h3 id="subtitle">Welcome! Type a keyword, search and enjoy 🔭</h3>
-                  <Search/>
+                  <h3 id="subtitle">Welcome! 🔭</h3>                  
                 </div>              
               </div>
         </div>
