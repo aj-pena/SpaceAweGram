@@ -1,0 +1,10 @@
+:root {
+    box-sizing: border-box;
+}
+
+/* HEADER */
+.header{
+    padding:2%;
+    background: rgba(28, 49, 68);
+    color: white;       
+}
