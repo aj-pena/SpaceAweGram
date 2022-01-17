@@ -1,15 +1,16 @@
 import React, {useState, useEffect} from 'react'
 import Card from '../Card'
 
-function Gallery( { term } ) {
+function Gallery( props ) {
    
       const [Darray, setDArray] = useState([])
       const baseUrl = 'https://images-api.nasa.gov';      
     
       useEffect(()=>{
         //  Fetching data from API and storing in Array "Items" if the media type is "image"
-        fetch(`${baseUrl}/search?q=${term}`)
+        fetch(`${baseUrl}/search?q=${props.data}`)
           .then((response) => {
+            console.log(response)
             return response.json()
           })
           .then((json) => {
@@ -18,9 +19,9 @@ function Gallery( { term } ) {
                   // item.setAttribute('key', item.data[0].nasa_id)
                   setDArray(Darray => [...Darray, item])               
                 }         
-            })        
+              })        
           })
-      }, []);
+      }, [props.data]);
 
    
     // console.log(items)
