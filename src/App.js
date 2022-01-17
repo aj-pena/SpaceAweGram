@@ -1,15 +1,17 @@
-import React, { useState } from 'react'
+import React, { useState} from 'react'
 import './style.css'
+// import {API_KEY} from './Keys'
 import Header from './components/Header';
 import Footer from './components/Footer';
 import Gallery from './components/pages/Gallery';
 import Favourites from './components/pages/Favourites';
 import Search from './components/Search'
 
-import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/css/bootstrap.css';
 
 export default function App() {
   const [ currentPage, setCurrentPage] = useState(0);
+  
   function renderPage(){
     switch (currentPage){
       case 0:
@@ -23,6 +25,8 @@ export default function App() {
         return <Favourites/>;
     }
   }
+
+   
 
   return (
     <div>

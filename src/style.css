@@ -64,6 +64,18 @@ ul {
 }
 
   /* GALLERY */
+  .cards-container{
+    display:flex;
+    flex-wrap: wrap;
+  }
+  .card{
+    width: 24rem;
+    margin: 1%;
+  }
+  /* img {
+    height: 400px;
+    width: auto;
+  } */
 
 
 /* FAVOURITES  */
