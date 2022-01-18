@@ -22,7 +22,7 @@ function Search() {
                 }         
               })        
           })
-      }, [query, Darray]);
+      }, [query]);
 
     function handleChange(e){
         str = e.target.value;
@@ -30,6 +30,7 @@ function Search() {
     }
     function handleClick(e){
         e.preventDefault();
+        setDArray([]);
         setQuery(str)
     }
     
