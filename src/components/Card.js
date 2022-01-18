@@ -1,4 +1,5 @@
 import React, {useState} from 'react'
+import Liked from './Liked'
 
 function Card({ image, title, date, description, id }) {
     const [heart, setHeart] = useState('♡');
@@ -8,7 +9,11 @@ function Card({ image, title, date, description, id }) {
         }else {
             setHeart('♡')
         }
+        Liked(image, title, date, description, id)
     }
+    
+
+    
 
     return (
         <div className="card" key={id}>
@@ -16,7 +21,7 @@ function Card({ image, title, date, description, id }) {
             <div className="card-body">
                 <h5 className="card-title">{title}</h5>
                 <br></br>
-                <p className='project-description card-text'>{description}</p>
+                {/* <p className='project-description card-text'>{description}</p> */}
                 <h6>Date: {date}</h6>
                 <button className='heart-btn' onClick={handleLike}>{heart}</button>                                                               
             </div>                  
