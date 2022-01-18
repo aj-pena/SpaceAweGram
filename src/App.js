@@ -7,7 +7,7 @@ import Footer from './components/Footer';
 import Favourites from './components/pages/Favourites';
 import Search from './components/Search'
 
-import 'bootstrap/dist/css/bootstrap.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 export default function App() {
   const [ currentPage, setCurrentPage] = useState(0);
