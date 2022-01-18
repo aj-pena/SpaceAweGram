@@ -79,7 +79,12 @@ ul {
     height: 400px;
     width: auto;
   } */
-
+.heart-btn{
+  color: red;
+  display: block;
+  position: relative;
+  float:right;
+}
 
 /* FAVOURITES  */
 
