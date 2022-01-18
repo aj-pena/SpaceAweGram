@@ -1,15 +1,13 @@
 :root {
     box-sizing: border-box;
 }
-/* *{
-  background-color: rgba(28, 49, 68, 0.1);
-} */
 
 /* HEADER */
 .header{
-    padding:2%;
+    padding:1%;
+    padding-top:3%;
     padding-left: 5%;
-    background: rgba(28, 49, 68);
+    background: rgb(43, 125, 197);
     color: white;       
 }
 button {
@@ -29,10 +27,10 @@ button {
     background-color: #cecbcb;
 }
 .navigation{
-    background: rgba(28, 49, 68);
+    background: rgb(43, 125, 197);
 }
 .headerBtns{
-    background: rgba(28, 49, 68);
+    background: rgb(43, 125, 197);
     display: flex;
     flex-wrap: wrap;
     justify-content:center;    
@@ -53,6 +51,7 @@ ul {
   .ribbon{
     margin-left: 5%;
     padding-top: 1%;
+    color: white;
   }
 
   /* SEARCH */
@@ -72,12 +71,11 @@ ul {
 
   /* GALLERY */
   .wrapper{
-    background-image: url('./assets/images/ryan-menke-untitled-artwork-5.jpg');
-    width: 100%;
-    height: auto;
-    position:absolute;
-    top: 0;
-    left: 0;
+    background-image: url('./assets/images/melanie-weidmann-9he1mSaFsQg-unsplash.jpg');
+    background-size: contain;
+    /* width: 100%;
+    height: auto; */
+    
 
   }
   .cards-container{
@@ -87,8 +85,9 @@ ul {
     justify-content:center;
   }
   .card{
-    background-color: rgba(255, 255, 255, 0.2) !important;
+    background-color: rgba(74, 118, 155,0.95) !important;
     color: white;
+    font-weight: 800;
     width: 20rem;
     margin: 1%;
     margin-bottom: 0 ;

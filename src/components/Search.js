@@ -36,7 +36,7 @@ function Search() {
     }
     return (
         <div >
-            <div className='wrapper'></div>
+            <div className='wrapper'>
             <div className="row ribbon-wrapper">
               {/* <!-- subtitle --> */}
                 <div className="col ribbon">                  
@@ -52,7 +52,7 @@ function Search() {
                     return <Card key={i.data[0].nasa_id} title={i.data[0].title} image={i.links[0].href} date={i.data[0].date_created} description={i.data[0].description} id={i.data[0].nasa_id} />
                 })}
             </div>
-
+            </div>
         </div>
     )
 }
