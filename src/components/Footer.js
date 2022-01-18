@@ -7,9 +7,9 @@ function Footer() {
             <div className="footer">
                 {/* <!-- contact methods --> */}
                     <ul className="footer-list">
-                        <li>License: MIT Commons</li>
+                        <li>Copyright (c) 2022</li>
                         <li>Made with ♡ by Andrés Peña </li>
-                        <li>Copyright 2022</li>                        
+                        <li>MIT License</li>                                                
                     </ul>
                              
               </div>
