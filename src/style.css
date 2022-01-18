@@ -66,9 +66,20 @@ ul {
 }
 .search button{
   margin-top: 0.5% !important;
+  border-color: white;
+  color: white;
 }
 
   /* GALLERY */
+  .wrapper{
+    background-image: url('./assets/images/ryan-menke-untitled-artwork-5.jpg');
+    width: 100%;
+    height: auto;
+    position:absolute;
+    top: 0;
+    left: 0;
+
+  }
   .cards-container{
     margin-top: 2%;
     display:flex;
@@ -76,13 +87,13 @@ ul {
     justify-content:center;
   }
   .card{
-    background-color: rgba(28, 49, 68, 0.7) !important;
+    background-color: rgba(255, 255, 255, 0.2) !important;
     color: white;
     width: 20rem;
     margin: 1%;
-    margin-top: 0.5%;
     margin-bottom: 0 ;
     border-radius: 20%;
+    border: white solid 1px;
   }
   /* img {
     height: 400px;
@@ -100,7 +111,26 @@ ul {
 }
 
 /* FAVOURITES  */
-
+.in-construction{
+  text-align: center;
+  font-size: 150%;
+  color: white;
+  position: absolute;
+  top: 40%;
+  left: 15%;
+}
+.painter{
+  color: white;
+  font-size: 24px;
+  font-weight: 700;
+  position: absolute;
+  bottom: -390%;
+  left: 40%;
+}
+.rocket{
+  height: auto;
+  width: 150vw;
+}
 
 /* FOOTER  */
 .footer{ 

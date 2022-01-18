@@ -14,12 +14,7 @@ export default function Header(props) {
               <Navigation setCurrentPage={props.setCurrentPage} />             
             </div>
             {/* <!-- Ribbon --> */}
-            <div className="row ribbon-wrapper">
-              {/* <!-- subtitle --> */}
-                <div className="col ribbon">                  
-                  <h3 id="subtitle">Welcome! 🔭</h3>                  
-                </div>              
-              </div>
+            
         </div>
     )
 }

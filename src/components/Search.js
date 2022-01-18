@@ -1,5 +1,6 @@
 import React, {useState, useEffect} from 'react'
 import Card from './Card'
+import Sky from '../assets/images/ryan-menke-untitled-artwork-5.jpg'
 
 function Search() {
     const baseUrl = 'https://images-api.nasa.gov';
@@ -33,16 +34,15 @@ function Search() {
         setDArray([]);
         setQuery(str)
     }
-    
-    
-            
-    
-      
-
-
-
     return (
         <div >
+            <div className='wrapper'></div>
+            <div className="row ribbon-wrapper">
+              {/* <!-- subtitle --> */}
+                <div className="col ribbon">                  
+                  <h3 id="subtitle">Welcome! 🔭</h3>                  
+                </div>              
+              </div>
             <div className='search'>
                 <input onChange={handleChange} className="form-control mr-sm-2" type="text" placeholder="Type a keyword" aria-label="Search" name='search'/>
                 <button onClick={handleClick} className="btn btn-outline-success my-2 my-sm-0 search-btn">Search</button>

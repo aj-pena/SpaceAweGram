@@ -1,5 +1,4 @@
 import React, {useState} from 'react'
-import Liked from './Liked'
 
 function Card({ image, title, date, description, id }) {
     const [heart, setHeart] = useState('♡');
@@ -8,13 +7,8 @@ function Card({ image, title, date, description, id }) {
             setHeart('♥')
         }else {
             setHeart('♡')
-        }
-        Liked(image, title, date, description, id)
+        }        
     }
-    
-
-    
-
     return (
         <div className="card" key={id}>
             <img src={image} className="card-img-top" alt="preview"/>
