@@ -162,3 +162,13 @@ ul {
     padding: 16px;
     
 }
+@media only screen and (max-width: 600px) {
+  .search input{
+    max-width: 250px;
+  }
+  .card{
+    margin-bottom: 3% ;
+   
+  }
+
+}
