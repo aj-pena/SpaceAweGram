@@ -12,7 +12,7 @@ function Favourites() {
                          
             </div>
             <img className='rocket' src={Rocket} alt='Digital painting of a NASA rockett by darko-markovic-dar-mar-exer'/>
-            <p className='painter'>Image by Darko Darmar Markovic</p>
+            {/* <p className='painter'>Image by Darko Darmar Markovic</p> */}
         </div>
     )
 }
