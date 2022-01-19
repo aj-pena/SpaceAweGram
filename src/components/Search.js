@@ -26,8 +26,14 @@ function Search() {
       }, [query]);
 
     function handleChange(e){
+        if(e.key === 'Enter'){
+            e.preventDefault();
+            setDArray([]);
+            setQuery(str)
+        }else {
         str = e.target.value;
-        console.log(str)
+        console.log(str)    
+        }
     }
     function handleClick(e){
         e.preventDefault();
@@ -44,8 +50,10 @@ function Search() {
                 </div>              
               </div>
             <div className='search'>
-                <input onChange={handleChange} className="form-control mr-sm-2" type="text" placeholder="Type a keyword" aria-label="Search" name='search'/>
-                <button onClick={handleClick} className="btn btn-outline-success my-2 my-sm-0 search-btn">Search</button>
+                
+                <input onChange={handleChange} onKeyUp={handleChange} className="form-control mr-sm-2" type="text" placeholder="Type a keyword" aria-label="Search" name='search' />
+                <button onClick={handleClick} className="btn btn-outline-success my-2 my-sm-0 search-btn" id='searching'>Search</button>
+                
             </div>
             <div className='cards-container'>
                 {Darray.map((i) =>{
