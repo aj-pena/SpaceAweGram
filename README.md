@@ -1,70 +1,72 @@
-# Getting Started with Create React App
+## <SpaceAweGram>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Table of Contents
 
-## Available Scripts
+  - [Description](#description)
+  - [Installation](#installation)
+  - [Usage](#usage)
+  - [Credits](#credits)
+  - [GitHub](#github)
+  - [Features](#features)
 
-In the project directory, you can run:
+## Description
 
-### `npm start`
+This REACT.js application allows the keen space observer to view images from the NASA Video and Image Library. By typing a keyword, the aplication will fetch all related images and display them in cards. The user will be able to like or unlike the images. Currently, no data permanence is implemented. In the future, a possible improvement would be to save liked images into a personal library so that the user can access them easily.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+The USER STORY goes as follow
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+    AS A user
+    I WANT an application that will fetch NASA images
+    SO THAT I can view them and like them.  
 
-### `npm test`
+## Installation
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+No installation is needed. This application is run in a live webpage.
 
-### `npm run build`
+## Usage
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+To use this application, go to the deployed webpage by followig this link: [Visit the deployed page](https://space-awe-gram.herokuapp.com/)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+![Image of the Landing Page](./src/assets/images/homepage.PNG "Landing Page")
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Once in the landing page, pre-loaded images will be shown. Type a keyword in the search bar and hit enter or click on the search button to fetch related images.
 
-### `npm run eject`
+![Image of a search query](./src/assets/images/search.PNG "Search query for Jupiter images")
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+After the cards with images are loaded, the user will be able to like or unlike the images as desired.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+![Image of a series of liked images](./src/assets/images/liked.PNG "Like / Unlike images")
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+In the future, a 'Favourites' section will be developed, where liked images will be displayed and saved. For now, an "In Construction" warning sign is displayed.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+![Section in construction warning sign](./src/assets/images/warning.PNG "Favourites section with 'In Construction' warning sign").
 
-## Learn More
+## Credits
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Third-party assets:
+- [Bootstrap](https://getbootstrap.com/)
+- [Nasa Video and Image Library]()
+- [React.js](https://reactjs.org/)
+- [npm](https://www.npmjs.com/)
+- [npm react-animated-heart](https://www.npmjs.com/package/react-animated-heart)
+- [Heroku](https://www.heroku.com/nodejs)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Reference material:
+- [w3schools](https://www.w3schools.com/)
+- [StackOverflow](https://stackoverflow.com/)
+- [Mozilla Developer Network](https://developer.mozilla.org/en-US/)
+- [CSS-TRICKS guide to flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
+  
 
-### Code Splitting
+## GitHub
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+If you want to know more details, feel free to [visit the repo](https://github.com/aj-pena/SpaceAweGram.git)
 
-### Analyzing the Bundle Size
+## Features
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+FrontEnd:
+- Bootstrap grid, cards
+- Third Party API (Nasa Video and Images Library)
+- React.JS
+- React animation
+- CSS and Flexbox
